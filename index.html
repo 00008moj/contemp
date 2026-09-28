@@ -1,37 +1,64 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Temperature Converter</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <div class="container">
-        <form>
-            <h1>Temperature Converter</h1>
+      <form>
+        <h1>Temperature Converter</h1>
 
-            <input type="number" id="textBox" value="0">
-            <br>
+        <input type="number" id="textBox" value="0" />
+        <br />
+        
+        <div class="allRadio">
+          <label>
+            <input type="radio" name="unit" id="celciusToKelvin" />
+            Celcius to Kelvin
+          </label>
 
-            <div>
-                <input type="radio" name="unit" id="toFahrenheit">
-                <label for="toFahrenheit">Celcius to Fahrenheit</label>
-            </div>
+          <label>
+            <input type="radio" name="unit" id="kelvinToCelcius" />
+            Kelvin to Celcius
+          </label>
 
-            <div>
-                <input type="radio" name="unit" id="toCelcius">
-                <label for="toCelcius">Fahrenheit to Celcius</label>
-            </div>
+          <label>
+            <input type="radio" name="unit" id="fahrenheitToCelcius" />
+            Fahrenheit to Celcius
+          </label>
 
-            <button class="buttons" id="button" type="button" onclick="convert()">Convert</button>
-            <p id="result"></p>
-        </form>
+          <label>
+            <input type="radio" name="unit" id="celciusToFahrenheit" />
+            Celcius to Fahrenheit
+          </label>
+
+          <label>
+            <input type="radio" name="unit" id="fahrenheitToKelvin" />
+            Fahrenheit to Kelvin
+          </label>
+
+          <label>
+            <input type="radio" name="unit" id="kelvinToFahrenheit" />
+            Kelvin to Fahrenheit
+          </label>
+        </div>
+
+        <button class="buttons" id="button" type="button" onclick="convert()">
+          Convert
+        </button>
+        <p id="result"></p>
+      </form>
     </div>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
