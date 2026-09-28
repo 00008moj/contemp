@@ -9,7 +9,7 @@ function convert(){
     if(toFahrenheit.checked) {
         temp = Number(textBox.value);
         temp = temp * 9 / 5 + 32;
-        resulttextContent = `${temp.toFixed(1)}°F`
+        result.textContent = `${temp.toFixed(1)}°F`
     }
     else if(toCelcius.checked) {
         temp = Number(textBox.value);
