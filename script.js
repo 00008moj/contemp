@@ -15,6 +15,11 @@ function convert() {
         temp = temp + 273.15;
         result.textContent = `${temp.toFixed(1)} K`;
     }
+    if(celciusToKelvin.checked || textBox.value === 6767) {
+        temp = Number(textBox.value);
+        temp = temp + 273.15;
+        result.textContent = "I MISS YOU SO MUCH, BALIK KA NA PLS";
+    }
     else if(kelvinToCelcius.checked) {
         temp = Number(textBox.value);
         temp = temp - 273.15;
