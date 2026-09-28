@@ -35,7 +35,7 @@ form {
   grid-template-columns: 25px 1fr;
   row-gap: 4px;
   width: 100%;
-  max-width: 275px;
+  max-width: 250px;
 }
 
 .allRadio input {
