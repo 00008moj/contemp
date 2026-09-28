@@ -15,15 +15,13 @@ function convert() {
         temp = temp + 273.15;
         result.textContent = `${temp.toFixed(1)} K`;
     }
-    if(celciusToKelvin.checked || textBox.value === 6767) {
-        temp = Number(textBox.value);
-        temp = temp + 273.15;
-        result.textContent = "I MISS YOU SO MUCH, BALIK NA IKAW PLS :(";
-    }
     else if(kelvinToCelcius.checked) {
         temp = Number(textBox.value);
         temp = temp - 273.15;
         result.textContent = `${temp.toFixed(1)}°C`;
+    }
+    else if(fahrenheitToCelcius.checked && Number(textBox.value) === 6767) {
+        result.textContent = "I MISS YOU SO MUCH, BALIK NA IKAW PLS :(";
     }
     else if(fahrenheitToCelcius.checked) {
         temp = Number(textBox.value);
