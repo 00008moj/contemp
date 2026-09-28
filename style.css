@@ -33,7 +33,7 @@ form {
 .allRadio {
   display: grid;
   grid-template-columns: 25px 1fr;
-  row-gap: 8px;
+  row-gap: 4px;
   width: 100%;
   max-width: 275px;
 }
