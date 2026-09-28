@@ -18,7 +18,7 @@ function convert() {
     if(celciusToKelvin.checked || textBox.value === 6767) {
         temp = Number(textBox.value);
         temp = temp + 273.15;
-        result.textContent = "I MISS YOU SO MUCH, BALIK KA NA PLS";
+        result.textContent = "I MISS YOU SO MUCH, BALIK NA IKAW PLS :(";
     }
     else if(kelvinToCelcius.checked) {
         temp = Number(textBox.value);
