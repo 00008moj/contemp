@@ -6,36 +6,37 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  min-height: 100vh;
+  height: 100vh;
   transform: translateY(-30px);
 }
 
 body {
   background-color: #f9f6ee;
-  font-family: Inter;
   margin: 0;
 }
 
 form {
+  font-family: Inter;
   text-align: center;
   background-color: #fff;
-  padding: 20px;
+  padding: 5px 25px;
   width: 350px;
-  border-radius: 20px;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+  border-radius: 25px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 10px;
+  box-shadow:
+    0 1px 2px rgba(0, 0, 0, 0.06),
+    0 4px 8px rgba(0, 0, 0, 0.04),
+    0 16px 32px rgba(0, 0, 0, 0.04);
 }
 
 .allRadio {
   display: grid;
   grid-template-columns: 25px 1fr;
-  row-gap: 4px;
   width: 100%;
   max-width: 250px;
+  cursor: pointer;
 }
 
 .allRadio input {
@@ -45,24 +46,21 @@ form {
 
 .allRadio label {
   text-align: left;
-  align-self: center;
 }
 
 #textBox {
   text-align: center;
-  font-size: 1.5em;
+  font-size: 2em;
   width: 100%;
-  max-width: 275px;
-  height: 25px;
-  padding: 12px;
+  height: 45px;
+  padding: 5px 25px;
   border-radius: 12px;
   border: 1.5px solid lightgrey;
   outline: none;
 }
 
 #textBox:hover {
-  border: 2px solid #b388ff;
-  box-shadow: 0px 0px 20px -17px;
+  border: 1px solid #b388ff;
 }
 
 #button {
@@ -70,23 +68,20 @@ form {
   border-radius: 25px;
   cursor: pointer;
   border: none;
-  background-color: #b388ff;
-  letter-spacing: 1.5px;
-  font-size: 15px;
-  transition: all 0.5s ease;
-  margin-top: 20px;
+  width: 100%;
+  height: 45px;
+  background-color: #7e3ff2;
+  font-size: 1em;
+  font-weight: bold;
+  transition: 0.2s;
+  margin-top: 25px;
+  color: white;
 }
 
 #button:hover {
-  letter-spacing: 3px;
-  background-color: #7e57c2;
-  color: hsl(0, 0%, 100%);
+  background-color: #9965f4;
 }
 
 #button:active {
-  letter-spacing: 3px;
-  background-color: #7e57c2;
-  color: hsl(0, 0%, 100%);
-  transform: scale(0.9);
-  transition: 10ms;
+  background-color: #b794f6;
 }
