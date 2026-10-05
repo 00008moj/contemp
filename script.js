@@ -6,6 +6,7 @@ const celciusToFahrenheit = document.getElementById("celciusToFahrenheit");
 const fahrenheitToKelvin = document.getElementById("fahrenheitToKelvin");
 const kelvinToFahrenheit = document.getElementById("kelvinToFahrenheit");
 const result = document.getElementById("result");
+const muli = document.getElementById("muli");
 let temp;
 
 function convert() {
@@ -22,6 +23,7 @@ function convert() {
     }
     else if(fahrenheitToCelcius.checked && Number(textBox.value) === 6767) {
         result.textContent = "I MISS YOU SO MUCH, BALIK NA IKAW PLS :(";
+        muli.play();
     }
     else if(fahrenheitToCelcius.checked) {
         temp = Number(textBox.value);
